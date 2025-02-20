@@ -10899,7 +10899,7 @@ p {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   color: #fff;
   letter-spacing: 0.0625em;
 }
@@ -10947,24 +10947,25 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/bologna.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
 }
 header.masthead .masthead-subheading {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-style: italic;
-  line-height: 1.5rem;
+  line-height: 1.3rem;
   margin-bottom: 25px;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .masthead-heading {
-  font-size: 3.25rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
+  line-height: 2rem;
+  margin-bottom: 1.8rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -10974,16 +10975,16 @@ header.masthead .masthead-heading {
     padding-bottom: 12.5rem;
   }
   header.masthead .masthead-subheading {
-    font-size: 2.25rem;
+    font-size: 1.2rem;
     font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
   }
   header.masthead .masthead-heading {
-    font-size: 4.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    line-height: 4.5rem;
-    margin-bottom: 4rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
   }
 }
 #portfolio .portfolio-item {
