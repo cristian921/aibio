@@ -73,8 +73,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #ffc800;
-  --bs-link-hover-color: #cca000;
+  --bs-link-color: #ffffff;
+  --bs-link-hover-color: #1c1c1c;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
 }
@@ -10878,7 +10878,7 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: #607d8b;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10904,13 +10904,15 @@ p {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color: #f3f3f3;
+  font-weight: 800;
+
 }
 
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0rem;
     border: none;
     background-color: transparent;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
@@ -10926,7 +10928,7 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #607d8b;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -10944,7 +10946,7 @@ p {
 }
 header.masthead {
   padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  padding-bottom: 13rem;
   text-align: center;
   color: #fff;
   background-image: url("../assets/img/bologna.jpg");
@@ -10968,11 +10970,13 @@ header.masthead .masthead-heading {
   margin-bottom: 1.8rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
+.countdown {
+    padding-top: 6rem;
+  }
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    padding-bottom: 15rem;
   }
   header.masthead .masthead-subheading {
     font-size: 1.2rem;
@@ -10985,6 +10989,9 @@ header.masthead .masthead-heading {
     font-weight: 700;
     line-height: 1.8rem;
     margin-bottom: 2rem;
+  }
+  .countdown {
+    padding-top: 15rem;
   }
 }
 #portfolio .portfolio-item {
