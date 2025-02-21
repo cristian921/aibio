@@ -246,11 +246,11 @@ sup {
 }
 
 a {
-  color: #614938;
+  color: #000113;
   text-decoration: underline;
 }
 a:hover {
-  color: #957661;
+  color: #13177c;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -10878,7 +10878,7 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #614938;
+  background-color: #000113;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10928,7 +10928,7 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #614938;
+    background-color: #000113;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -10949,7 +10949,7 @@ header.masthead {
   padding-bottom: 7rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/bologna.jpg");
+  background-image: url("../assets/img/bologna_1.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11252,7 +11252,7 @@ header.masthead .masthead-heading {
 .team-member img {
   width: 14rem;
   height: 14rem;
-  border: 0.5rem solid rgba(95, 70, 49, 0.8);
+  border: 0.5rem solid rgba(0, 1, 19, 0.84);
 }
 .team-member h4, .team-member .h4 {
   margin-top: 1.5rem;
