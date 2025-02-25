@@ -10911,8 +10911,8 @@ p {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 0rem;
+    /*padding-top: 1.5rem;
+    padding-bottom: 0rem;*/
     border: none;
     background-color: transparent;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
@@ -10991,7 +10991,7 @@ header.masthead .masthead-heading {
     margin-bottom: 2rem;
   }
   .countdown {
-    padding-top: 10rem;
+    padding-top: 17rem;
   }
 }
 #portfolio .portfolio-item {
