@@ -390,8 +390,8 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 text-white text-start">Copyright &copy; AIBO 2025</div>
-            <div class="col-lg-6 text-white text-end">
+            <div class="col-12 text-white text-center">Copyright &copy; AIBO 2025</div>
+            <div class="col-12 text-white text-center">
                 <a href="https://www.iubenda.com/privacy-policy/61629704"
                    class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy
                     Policy</a>
@@ -450,8 +450,7 @@
         w.onload = loader;
     }
 })(window, document);</script>
-<script type="text/javascript" src="//embeds.iubenda.com/widgets/3972cee1-84f9-45a2-bb42-fd3490566d02.js"></script>
-<!-- Bootstrap core JS-->
+<script type="text/javascript" src="//embeds.iubenda.com/widgets/3972cee1-84f9-45a2-bb42-fd3490566d02.js"></script><!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
@@ -459,8 +458,7 @@
 <!-- * *                               SB Forms JS                               * *-->
 <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-<script>
+<script type="text/javascript">
     // Set the date we're counting down to (1 month from now)
     const countDownDate = new Date("2025-10-25");
 
@@ -493,6 +491,55 @@
             document.getElementById("seconds").innerHTML = "00";
         }
     }, 1000);
+</script>
+<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', event => {
+
+        // Navbar shrink function
+        var navbarShrink = function () {
+            const navbarCollapsible = document.body.querySelector('#mainNav');
+            if (!navbarCollapsible) {
+                return;
+            }
+            if (window.scrollY === 0) {
+                navbarCollapsible.classList.remove('navbar-shrink')
+            } else {
+                navbarCollapsible.classList.add('navbar-shrink')
+            }
+
+        };
+
+        // Shrink the navbar
+        navbarShrink();
+
+        // Shrink the navbar when page is scrolled
+        document.addEventListener('scroll', navbarShrink);
+
+        //  Activate Bootstrap scrollspy on the main nav element
+        const mainNav = document.body.querySelector('#mainNav');
+        if (mainNav) {
+            new bootstrap.ScrollSpy(document.body, {
+                target: '#mainNav',
+                rootMargin: '0px 0px -40%',
+            });
+        }
+        ;
+
+        // Collapse responsive navbar when toggler is visible
+        const navbarToggler = document.body.querySelector('.navbar-toggler');
+        const responsiveNavItems = [].slice.call(
+            document.querySelectorAll('#navbarResponsive .nav-link')
+        );
+        responsiveNavItems.map(function (responsiveNavItem) {
+            responsiveNavItem.addEventListener('click', () => {
+                if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                    navbarToggler.click();
+                }
+            });
+        });
+
+    });
+
 </script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3V22ZXB38J"></script>
