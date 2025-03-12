@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /test/
+Disallow: /tmp/
+Allow: /
+
+Sitemap: https://wsaibio.github.io/ecai2025/sitemap.xml
