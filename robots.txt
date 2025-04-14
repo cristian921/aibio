@@ -3,6 +3,6 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /test/
 Disallow: /tmp/
-Allow: /
+Allow: /ecai2025
 
 Sitemap: https://wsaibio.github.io/ecai2025/sitemap.xml
