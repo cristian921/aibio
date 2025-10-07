@@ -26,7 +26,7 @@
         }
 
         .schedule-block {
-            margin-bottom: 2em;
+            margin-bottom: 0.1em;
         }
 
         .schedule-block h3 {
@@ -137,6 +137,7 @@
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#call-for-papers">Call for Papers</a></li>
                 <li class="nav-item"><a class="nav-link" href="#keynote">Keynote</a></li>
+                <li class="nav-item"><a class="nav-link" href="#schedule">Program</a></li>
                 <li class="nav-item"><a class="nav-link" href="#organizing-committee">Organizing Committee</a></li>
                 <li class="nav-item"><a class="nav-link" href="#program-committee">Program Committee</a></li>
                 <!--li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li-->
@@ -590,49 +591,65 @@
 <!--schedule-->
 <section class="page-section bg-light schedule-section" id="schedule">
     <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading">The schedule</h2>
+        <div class="text-center mb-5">
+            <h2 class="section-heading text-uppercase">The Program</h2>
         </div>
+
 
         <div class="schedule-group">
             <!-- OPENING -->
             <section class="schedule-block" id="opening">
                 <h3 class="schedule-block-title">
-                    Opening <span class="schedule-time">(08:45–09:00)</span>
+                    Opening <span class="schedule-time">(08:55–09:00)</span>
+                    <button class="toggle-abstract" data-target="group-open" data-show="Show details"
+                            data-hide="Hide details">Show details
+                    </button>
                 </h3>
-                <div class="aibio-card">
-                    <h5 class="session-title">Welcome and Introduction</h5>
-                    <div class="session-authors">The Organizing Committee</div>
-                    <p class="session-text">Opening remarks and outline of the workshop objectives.</p>
+                <div class="schedule-group" id="group-open" hidden>
+                    <div class="aibio-card">
+                        <h5 class="session-title">Welcome and Introduction</h5>
+                        <div class="session-authors">The Organizing Committee</div>
+                        <p class="session-text">Opening remarks and outline of the workshop objectives.</p>
+                    </div>
                 </div>
             </section>
 
-            <!-- PLENARY -->
             <section class="schedule-block" id="keynote-1">
                 <h3 class="schedule-block-title">
-                    Keynote 1 <span class="schedule-time">(09:00–09:45)</span>
-                </h3>
-                <div class="aibio-card">
-                    <h5 class="session-title">Increasing Data Availability Through Standardization: Unlocking the
-                        Potential of AI in Digital Pathology</h5>
-                    <div class="session-authors">Dr. Francesco Martino (PhD Surgical Pathology)</div>
-                    <button class="toggle-abstract" data-target="keynote-abs-1" data-show="Abstract" data-hide="Hide">
-                        Abstract
+                    Keynote 1: Dr. Francesco Martino <span class="schedule-time">(09:00–09:45)</span>
+                    <button class="toggle-abstract" data-target="group-k1" data-show="Show details"
+                            data-hide="Hide details">Show details
                     </button>
-                    <div id="keynote-abs-1" class="session-abstract" hidden>
-                        <p>As digital pathology enters a new era, the promise of AI-assisted diagnostics is often held
-                            back
-                            not by model performance, but by limited access to structured, interoperable data. In this
-                            talk,
-                            Dr. Francesco Martino explores how the lack of standardization in data formats remains a key
-                            obstacle to translating research models into clinical tools.</p>
-                        <p>Bringing his experience in surgical pathology research and medical imaging software
-                            development,
-                            Dr. Martino will highlight the practical benefits of adopting the DICOM standard for digital
-                            pathology. He will demonstrate how standardization can improve data integration, enhance AI
-                            workflows, and support large-scale collaborations—ultimately accelerating the clinical
-                            impact of
-                            computational pathology.</p>
+                </h3>
+                <div class="schedule-group" id="group-k1" hidden>
+                    <div class="aibio-card">
+                        <h5 class="session-title">Increasing Data Availability Through Standardization: Unlocking the
+                            Potential of AI in Digital Pathology</h5>
+                        <div class="session-authors">Dr. Francesco Martino (PhD Surgical Pathology)</div>
+                        <button class="toggle-abstract" data-target="keynote-abs-1" data-show="Abstract"
+                                data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="keynote-abs-1" class="session-abstract" hidden>
+                            <p>As digital pathology enters a new era, the promise of AI-assisted diagnostics is often
+                                held
+                                back
+                                not by model performance, but by limited access to structured, interoperable data. In
+                                this
+                                talk,
+                                Dr. Francesco Martino explores how the lack of standardization in data formats remains a
+                                key
+                                obstacle to translating research models into clinical tools.</p>
+                            <p>Bringing his experience in surgical pathology research and medical imaging software
+                                development,
+                                Dr. Martino will highlight the practical benefits of adopting the DICOM standard for
+                                digital
+                                pathology. He will demonstrate how standardization can improve data integration, enhance
+                                AI
+                                workflows, and support large-scale collaborations—ultimately accelerating the clinical
+                                impact of
+                                computational pathology.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -640,89 +657,158 @@
             <!-- AI for Disease (morning) -->
             <section class="schedule-block" id="ai-for-disease">
                 <h3 class="schedule-block-title">
-                    AI for Disease <span class="schedule-time">(09:45–10:29)</span>
+                    Session 1: AI for Disease - Part 1 <span class="schedule-time">(09:45–10:30)</span>
+                    <button class="toggle-abstract" data-target="group-aid" data-show="Show details"
+                            data-hide="Hide details">Show details
+                    </button>
                 </h3>
+                <div class="schedule-group" id="group-aid" hidden>
+                    <div class="aibio-card">
+                        <h5 class="session-title">Improving Early Sepsis Onset Prediction Through Federated
+                            Learning</h5>
+                        <div class="session-authors">Christoph Düsing, Philipp Cimiano</div>
+                        <button class="toggle-abstract" data-target="aibio-abs1" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="aibio-abs1" class="session-abstract" hidden>
+                            Early and accurate prediction of sepsis onset remains a major challenge in intensive care,
+                            where timely detection and subsequent intervention can significantly improve patient
+                            outcomes.
+                            While machine learning models have shown promise in this domain, their success is often
+                            limited
+                            by the amount and diversity of training data available to individual hospitals and Intensive
+                            Care Units (ICUs). Federated Learning (FL) addresses this issue by enabling collaborative
+                            model
+                            training across institutions without requiring data sharing, thus preserving patient
+                            privacy. In
+                            this work, we propose a federated, attention-enhanced Long Short-Term Memory model for
+                            sepsis
+                            onset prediction, trained on multi-centric ICU data. Unlike existing approaches that rely on
+                            fixed prediction windows, our model supports variable prediction horizons, enabling both
+                            short-
+                            and long-term forecasting in a single unified model. During analysis, we put particular
+                            emphasis
+                            on the improvements through our approach in terms of early sepsis detection, i.e.,
+                            predictions
+                            with large prediction windows by conducting an in-depth temporal analysis.
+                            Our results prove that using FL does not merely improve overall prediction performance (with
+                            performance approaching that of a centralized model), but is particularly beneficial for
+                            early
+                            sepsis onset prediction. Finally, we show that our choice of employing a variable prediction
+                            window rather than a fixed window does not hurt performance significantly but reduces
+                            computational, communicational, and organizational overhead.
+                        </div>
+                    </div>
 
-                <div class="aibio-card">
-                    <h5 class="session-title">Improving Early Sepsis Onset Prediction Through Federated Learning</h5>
-                    <div class="session-authors">Christoph Düsing, Philipp Cimiano</div>
-                    <button class="toggle-abstract" data-target="aibio-abs1" data-show="Abstract" data-hide="Hide">
-                        Abstract
-                    </button>
-                    <div id="aibio-abs1" class="session-abstract" hidden>
-                        Early and accurate prediction of sepsis onset remains a major challenge in intensive care, where
-                        timely detection and subsequent intervention can significantly improve patient outcomes. While
-                        machine learning models have shown promise in this domain, their success is often limited by
-                        the amount and diversity of training data available to individual hospitals and ICUs. Federated
-                        Learning (FL) addresses this issue by enabling collaborative model training across institutions
-                        without requiring data sharing, thus preserving patient privacy. In this work, we propose a
-                        federated, attention-enhanced Long Short-Term Memory model for sepsis onset prediction, trained
-                        on multi-centric ICU data...
+                    <div class="aibio-card">
+                        <h5 class="session-title">Experimenting Federated AI Models for Hematological Diseases</h5>
+                        <div class="session-authors">
+                            Luciana Carota, Francesco Casadei, Gianluca Asti, Davide Piscia, Patricia Apellániz, Saverio
+                            D'Amico,
+                            Riccardo Biondi, Claudia Sala, Nono S.C. Merleau, Michel S.J. van Deventer, Raffaella
+                            Colombatti,
+                            Elisabetta Mezzalira, María del Mar Pereira, Sara Isabel, Stefano Polizzi, Sara Peluso,
+                            Cesare
+                            Rollo,
+                            Tiziana Sanavia, Piero Fariselli, Juan Parras, Alejandro Almodóvar, Santiago Zazo, Matteo
+                            Della
+                            Porta,
+                            Federico Alvarez, Gastone Castellani, Enrico Giampieri
+                        </div>
+                        <button class="toggle-abstract" data-target="aibio-abs2" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="aibio-abs2" class="session-abstract" hidden>
+                            Federated Learning is a decentralized approach to Artificial Intelligence that allows
+                            participant nodes to train models locally and share only model weights. A federated global
+                            model
+                            is created by aggregating model parameters after periodical isolated trainings at each node.
+                            This method preserves privacy and is beneficial in sectors like healthcare, as it
+                            facilitates
+                            research and improves care while protecting patient data.
+                            This study exploits two rare hematological diseases to demonstrate the efficacy of federated
+                            models in real use case, and to test the technology that underlies the platform developed by
+                            the
+                            GenoMed4All consortium.
+                            The two implemented models are commonly used for survival and classification tasks,
+                            respectively. Because of their known effectiveness and simplicity, they are suited to test a
+                            federated environment for its first deployment with a basic configuration of 3 nodes.
+                            Performances were evaluated comparing two approaches: simulations on single computer and
+                            platform runs, testing experimental and technological aspects. In both approaches, federated
+                            models show better performances compared to isolated nodes, as demonstrated with sufficient
+                            precision in case of large and small datasets.
+                        </div>
                     </div>
-                </div>
 
-                <div class="aibio-card">
-                    <h5 class="session-title">Experimenting Federated AI Models for Hematological Diseases</h5>
-                    <div class="session-authors">
-                        Luciana Carota, Francesco Casadei, Gianluca Asti, Davide Piscia, Patricia Apellániz, Saverio
-                        D'Amico,
-                        Riccardo Biondi, Claudia Sala, Nono S.C. Merleau, Michel S.J. van Deventer, Raffaella
-                        Colombatti,
-                        Elisabetta Mezzalira, María del Mar Pereira, Sara Isabel, Stefano Polizzi, Sara Peluso, Cesare
-                        Rollo,
-                        Tiziana Sanavia, Piero Fariselli, Juan Parras, Alejandro Almodóvar, Santiago Zazo, Matteo Della
-                        Porta,
-                        Federico Alvarez, Gastone Castellani, Enrico Giampieri
+                    <div class="aibio-card">
+                        <h5 class="session-title">Hearing Impairment Assessment in Infants through Explainable Computer
+                            Vision Analysis of Facial Features</h5>
+                        <div class="session-authors">Samuele Pe, Anisa Visram, Iain Jackson, Michael Stone, Enea
+                            Parimbelli,
+                            Kevin Munro, Arianna Dagliati
+                        </div>
+                        <button class="toggle-abstract" data-target="aibio-abs3" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="aibio-abs3" class="session-abstract" hidden>
+                            Hearing assessment in infants is complicated due to the lack of reliable behavioral
+                            responses.
+                            The BAMBINO (Behavioural Audiometry Measures in Babies: Innovation, Novelty and
+                            Optimisation)
+                            project explores the feasibility of automating hearing assessment in infants by leveraging
+                            facial behavior analysis. This feasibility study investigates the potential of action units,
+                            head pose, and gaze direction to identify changes in behavioural response to suprathreshold
+                            sound stimuli in infants aged 7 to 24 months. Video recordings of 58 healthy infants were
+                            analysed using convolutional neural networks (1D-CNN and 2D-CNN), evaluated against human
+                            observers. Results indicate that head pose is the primary feature for classification,
+                            closely
+                            aligning with current clinical protocols, but facial expressions still provide additional
+                            insights. SignalGrad-CAM, was employed to interpret model decisions, revealing nuanced
+                            patterns
+                            such as subtle micro-expressions and subtle facial reactions that often preceded head turns.
+                            Post-hoc analyses regarding age and trial progression in the test set highlighted that
+                            infants
+                            aged 12-18 months were most responsive and performance declined in later trial stages,
+                            likely
+                            due to fatigue, highlighting the importance of selecting a proper session duration. Future
+                            work
+                            will address biases in the data and subsequent phases of the BAMBINO project aim to extend
+                            this
+                            study to younger infants (3-7 months), including hearing-impaired populations.
+                        </div>
                     </div>
-                    <button class="toggle-abstract" data-target="aibio-abs2" data-show="Abstract" data-hide="Hide">
-                        Abstract
-                    </button>
-                    <div id="aibio-abs2" class="session-abstract" hidden>
-                        Federated Learning is a decentralized approach to Artificial Intelligence that allows
-                        participant nodes
-                        to train models locally and share only model weights. A federated global model is created by
-                        aggregating model parameters after periodical isolated trainings at each node. This method
-                        preserves
-                        privacy and is beneficial in sectors like healthcare, where sensitive data restrictions limit
-                        data sharing.
-                    </div>
-                </div>
 
-                <div class="aibio-card">
-                    <h5 class="session-title">Hearing Impairment Assessment in Infants through Explainable Computer
-                        Vision Analysis of Facial Features</h5>
-                    <div class="session-authors">Samuele Pe, Anisa Visram, Iain Jackson, Michael Stone, Enea Parimbelli,
-                        Kevin Munro, Arianna Dagliati
-                    </div>
-                    <button class="toggle-abstract" data-target="aibio-abs3" data-show="Abstract" data-hide="Hide">
-                        Abstract
-                    </button>
-                    <div id="aibio-abs3" class="session-abstract" hidden>
-                        Hearing assessment in infants is complicated due to the lack of reliable behavioral responses.
-                        The
-                        BAMBINO project explores the feasibility of automating hearing assessment in infants by
-                        leveraging
-                        facial behavior analysis. This feasibility study investigates the potential of action units,
-                        head pose,
-                        and gaze direction to objectively quantify auditory responses.
-                    </div>
-                </div>
-
-                <div class="aibio-card">
-                    <h5 class="session-title">Type 2 Diabetes Prediction from Multi-Center Electronic Health Records
-                        with Machine Learning</h5>
-                    <div class="session-authors">Max H Rerisi, Mariachiara Di Cosmo, Michele Bernardini, Luca Romeo
-                    </div>
-                    <button class="toggle-abstract" data-target="aibio-abs4" data-show="Abstract" data-hide="Hide">
-                        Abstract
-                    </button>
-                    <div id="aibio-abs4" class="session-abstract" hidden>
-                        Early prediction of Type 2 Diabetes Mellitus (T2DM) is crucial for effective prevention and
-                        management. While machine learning has shown promise on structured hospital data, little
-                        attention
-                        has been given to primary care data. This study investigates the use of state-of-the-art ML
-                        models
-                        leveraging multi-center primary care EHRs.
+                    <div class="aibio-card">
+                        <h5 class="session-title">Type 2 Diabetes Prediction from Multi-Center Electronic Health Records
+                            with Machine Learning</h5>
+                        <div class="session-authors">Max H Rerisi, Mariachiara Di Cosmo, Michele Bernardini, Luca Romeo
+                        </div>
+                        <button class="toggle-abstract" data-target="aibio-abs4" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="aibio-abs4" class="session-abstract" hidden>
+                            Early prediction of Type 2 Diabetes Mellitus (T2DM) is crucial for effective prevention and
+                            management. While Machine Learning (ML) has shown promise on structured hospital data,
+                            little
+                            attention has been given to primary care data.
+                            This study investigates the performance of several state-of-the-art ML models (including
+                            Logistic Regression, SVM, KNN, Decision Tree, Random Forest, XGBoost)
+                            and the recent TabPFN foundation model on a novel real-world multi-center dataset
+                            (FIMMG-6GP)
+                            collected from six general practitioners (GPs).
+                            We evaluate models using two validation strategies: stratified Five-Fold cross-validation
+                            (5F-CV) to assess within-distribution performance, and Leave-One-GP-Out (L1GPO-CV) to
+                            capture
+                            cross-practice variability.
+                            XGBoost consistently outperformed all models in terms of AUC (93.70% in 5F-CV; 93.10% in
+                            L1GPO-CV) and sensitivity, while also providing clinically interpretable insights via SHAP
+                            analysis. In contrast, TabPFN achieved high overall scores but showed poor sensitivity in
+                            detecting T2DM cases.
+                            Our findings underscore the value of the proposed cross-practice evaluation in developing
+                            trustworthy ML-based decision support systems for real-world clinical settings, and
+                            particularly
+                            for primary care.
+                        </div>
                     </div>
                 </div>
             </section>
@@ -731,118 +817,197 @@
             <section class="schedule-block" id="coffee-break-1">
                 <h3 class="schedule-block-title">
                     Coffee Break <span class="schedule-time">(10:30–11:00)</span>
+                    <button class="toggle-abstract" data-target="group-cb1" data-show="Show details"
+                            data-hide="Hide details">Show details
+                    </button>
                 </h3>
-                <div class="aibio-card">
-                    <h5 class="session-title">Morning Coffee Break</h5>
-                    <div class="session-authors">10:30–11:00</div>
-                    <p class="session-text">Refreshments and networking.</p>
+                <div class="schedule-group" id="group-cb1" hidden>
+                    <div class="aibio-card">
+                        <h5 class="session-title">Morning Coffee Break</h5>
+                        <div class="session-authors">10:30–11:00</div>
+                        <p class="session-text">Refreshments and networking.</p>
+                    </div>
                 </div>
             </section>
 
             <!-- Data Generation & Augmentation -->
             <section class="schedule-block" id="data-generation-augmentation">
                 <h3 class="schedule-block-title">
-                    Data Generation &amp; Augmentation <span class="schedule-time">(11:00–11:58)</span>
+                    Session 2: Data Generation &amp; Augmentation <span class="schedule-time">(11:00–12:00)</span>
+                    <button class="toggle-abstract" data-target="group-dga" data-show="Show details"
+                            data-hide="Hide details">Show details
+                    </button>
                 </h3>
 
-                <div class="aibio-card">
-                    <h5 class="session-title">Knowledge Graph-Enhanced Retrieval-Augmented Generation for
-                        Nutrigenetics</h5>
-                    <div class="session-authors">Giovanni Maria De Filippis, Domenico Benfenati, Gianluca De Carlo,
-                        Antonio Maria Rinaldi
+                <div class="schedule-group" id="group-dga" hidden>
+                    <div class="aibio-card">
+                        <h5 class="session-title">Knowledge Graph-Enhanced Retrieval-Augmented Generation for
+                            Nutrigenetics</h5>
+                        <div class="session-authors">Giovanni Maria De Filippis, Domenico Benfenati, Gianluca De Carlo,
+                            Antonio Maria Rinaldi
+                        </div>
+                        <button class="toggle-abstract" data-target="dga-abs1" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="dga-abs1" class="session-abstract" hidden>
+                            This paper presents a domain-specific adaptation of Graph-RAG framework for nutrigenetics,
+                            focusing on the extraction of genetic variant information relevant to personalized
+                            nutrition. By
+                            integrating Knowledge Graphs (KGs) with Retrieval-Augmented Generation (RAG), we enhance
+                            biomedical knowledge discovery. An ablation study identifies optimal combinations of Large
+                            Language Models (LLMs) and embeddings, with Gemma2:9b paired with BERT embeddings achieving
+                            the
+                            highest-quality KGs. Evaluation against a NaiveRAG baseline demonstrates significant
+                            improvements in response comprehensiveness, directness, and empowerment across diverse user
+                            profiles, including researchers, healthcare professionals, and consumers. These advancements
+                            highlight the potential of GraphRAG to accelerate hypothesis generation, support clinical
+                            decision-making, and empower individuals to make informed dietary choices based on genetic
+                            insights. This preliminary findings underscore the importance of structured knowledge
+                            representation in addressing biomedical challenges, with promising implications for
+                            advancing
+                            personalized nutrition and multi-domain biomedical applications.
+                        </div>
                     </div>
-                    <button class="toggle-abstract" data-target="dga-abs1" data-show="Abstract" data-hide="Hide">
-                        Abstract
-                    </button>
-                    <div id="dga-abs1" class="session-abstract" hidden>
-                        This paper presents a domain-specific adaptation of Graph-RAG framework for nutrigenetics,
-                        focusing on the
-                        extraction of genetic variant information relevant to personalized nutrition. By integrating
-                        Knowledge
-                        Graphs KGs with Retrieval-Augmented Generation RAG, we enhance biomedical knowledge discovery.
-                        Our results
-                        highlight the potential of GraphRAG to accelerate hypothesis generation, support clinical
-                        decision-making,
-                        and empower individuals to make informed dietary choices based on genetic insights.
-                    </div>
-                </div>
 
-                <div class="aibio-card">
-                    <h5 class="session-title">Generative Data Augmentation by Dataset Distillation</h5>
-                    <div class="session-authors">Yuri Gordienko, Yuriy Kochura, Vladyslav Taran, Sergii Stirenko,
-                        Grzegorz Nowakowski
+                    <div class="aibio-card">
+                        <h5 class="session-title">Generative Data Augmentation by Dataset Distillation</h5>
+                        <div class="session-authors">Yuri Gordienko, Yuriy Kochura, Vladyslav Taran, Sergii Stirenko,
+                            Grzegorz Nowakowski
+                        </div>
+                        <button class="toggle-abstract" data-target="dga-abs2" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="dga-abs2" class="session-abstract" hidden>
+                            Dataset distillation aims to create compact synthetic datasets that retain the
+                            generalization
+                            properties of real datasets. This study employs dataset distillation by matching training
+                            trajectories (DDMTT), a novel approach that utilizes expert trajectories (precomputed
+                            sequences
+                            of network parameters trained on the full dataset) to guide the distillation process.
+                            Experiments with the extremely increased number of images per class (IPC) were conducted
+                            using
+                            standard datasets such as CIFAR-10 and CIFAR-100, as well as medical benchmarking datasets
+                            from
+                            MedMNIST. The proposed method of generative data augmentation by dataset distillation
+                            (GDADD)
+                            demonstrated that, for CIFAR datasets, their smaller distilled versions containing 40,000
+                            images
+                            achieved higher validation accuracy than the full datasets with 50,000 images, surpassing
+                            the
+                            original dataset’s performance by 3.1\% for CIFAR-10 and 2.9\% for CIFAR-100. For the
+                            considered
+                            MedMNIST datasets (PathMNIST, DermaMNIST, RetinaMNIST), some distilled datasets (PathMNIST)
+                            exceeded the performance of models trained on full datasets, confirming the method’s
+                            robustness
+                            across different domains and demonstrating the better results for the well balanced
+                            datasets.
+                            GDADD enables efficient experimentation and rapid refinement of synthetic datasets that
+                            enhances
+                            dataset distillation by preserving essential information while significantly reducing
+                            storage
+                            and computational costs, making it a promising technique for scalable DL applications in
+                            health
+                            care.
+                        </div>
                     </div>
-                    <button class="toggle-abstract" data-target="dga-abs2" data-show="Abstract" data-hide="Hide">
-                        Abstract
-                    </button>
-                    <div id="dga-abs2" class="session-abstract" hidden>
-                        Dataset distillation aims to create compact synthetic datasets that retain the generalization
-                        properties of
-                        real datasets. This study employs dataset distillation by matching training trajectories, a
-                        novel approach
-                        that utilizes expert trajectories to guide the distillation process. The method enables
-                        efficient
-                        experimentation and rapid refinement of synthetic datasets, enhancing data augmentation by
-                        preserving
-                        essential information while reducing storage and computational costs.
-                    </div>
-                </div>
 
-                <div class="aibio-card">
-                    <h5 class="session-title">Semantic Similarity in Radiology Reports via LLMs and NER</h5>
-                    <div class="session-authors">Beth Pearson, Ahmed Adnan Elsharkawy, Zahraa S. Abdallah</div>
-                    <button class="toggle-abstract" data-target="dga-abs3" data-show="Abstract" data-hide="Hide">
-                        Abstract
-                    </button>
-                    <div id="dga-abs3" class="session-abstract" hidden>
-                        In this paper, we explore the ability of LLMs to provide explainable and accurate comparisons of
-                        reports
-                        in the radiology domain, evaluating the performance of several LLMs and a traditional approach
-                        based on
-                        Named-Entity-Recognition (NER). We propose Llama-EntScore, a semantic similarity scoring method
-                        using a
-                        combination of Llama 3.1 and NER, which generates a quantitative similarity score and valuable
-                        guidance
-                        for reviewing and refining radiology reports.
+                    <div class="aibio-card">
+                        <h5 class="session-title">Semantic Similarity in Radiology Reports via LLMs and NER</h5>
+                        <div class="session-authors">Beth Pearson, Ahmed Adnan Elsharkawy, Zahraa S. Abdallah</div>
+                        <button class="toggle-abstract" data-target="dga-abs3" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="dga-abs3" class="session-abstract" hidden>
+                            Radiology report evaluation is a crucial part of radiologists' training and plays a key role
+                            in
+                            ensuring diagnostic accuracy. As part of the standard radiology reporting workflow, a junior
+                            radiologist typically prepares a preliminary report, which is then reviewed and edited by a
+                            senior radiologist to produce the final report. Identifying semantic differences between
+                            preliminary and final reports is essential for junior doctors, both as a training tool and
+                            to
+                            help uncover gaps in clinical knowledge.While AI in radiology is a rapidly growing field,
+                            the
+                            application of large language models (LLMs), remains challenging due to the need for
+                            specialised
+                            domain knowledge. In this paper, we explore the ability of LLMs to provide explainable and
+                            accurate comparisons of reports in the radiology domain.
+                            We begin by evaluating the performance of several LLMs in comparing radiology reports and
+                            also
+                            assessing a more traditional approach based on Named-Entity-Recognition (NER). However, both
+                            approaches exhibit limitations in delivering accurate feedback on semantic similarity. To
+                            address this, we propose Llama-EntScore, a semantic similarity scoring method using a
+                            combination of Llama 3.1 and NER with tunable weights to emphasise or de-emphasise specific
+                            types of differences. Our approach generates a quantitative similarity score for tracking
+                            progress and also gives an interpretation of the score that aims to offer valuable guidance
+                            in
+                            reviewing and refining their reporting. We find our method achieves 67% exact-match accuracy
+                            and 93% accuracy within ± 1 when compared to radiologist-provided ground truth scores —
+                            outperforming both LLMs and NER used independently.
+                        </div>
                     </div>
-                </div>
 
-                <div class="aibio-card">
-                    <h5 class="session-title">From Scarce to Sufficient: Imaginary Image-like Features via Diffusion
-                        Models</h5>
-                    <div class="session-authors">Halan Villarroel, Christian Pieringer, Billy Peralta</div>
-                    <button class="toggle-abstract" data-target="dga-abs4" data-show="Abstract" data-hide="Hide">
-                        Abstract
-                    </button>
-                    <div id="dga-abs4" class="session-abstract" hidden>
-                        We propose a framework that addresses data imbalance in clinical settings using diffusion models
-                        to
-                        generate high-fidelity and diverse synthetic features. The method consistently improves
-                        performance metrics
-                        compared to classical augmentation methods, positioning it as an effective, reproducible
-                        solution for
-                        enhancing the robustness of models used in medical AI.
+                    <div class="aibio-card">
+                        <h5 class="session-title">From Scarce to Sufficient: Imaginary Image-like Features via Diffusion
+                            Models</h5>
+                        <div class="session-authors">Halan Villarroel, Christian Pieringer, Billy Peralta</div>
+                        <button class="toggle-abstract" data-target="dga-abs4" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="dga-abs4" class="session-abstract" hidden>
+                            The growing use of artificial intelligence in modern medicine poses significant
+                            challenges due to the lack and imbalance of high-quality clinical data, which arises from
+                            ethical, logistical, and technical limitations. We propose a framework that addresses this
+                            challenge by utilizing diffusion models, a state-of-the-art generative technique, to provide
+                            high-fidelity and diverse synthetic features rather than images. The framework implements a
+                            complete pipeline that combines feature extraction with pre-trained convolutional networks
+                            and a U-Net-based diffusion model to generate new clinical representations in scenarios with
+                            strong imbalance, such as melanoma diagnosis. Through rigorous experiments on two real
+                            datasets, we demonstrated that this technique consistently improves critical standard
+                            performance metrics compared to classical augmentation methods such as replication or
+                            Gaussian
+                            noise, positioning it as an effective and reproducible solution for data augmentation. The
+                            document describes the method and empirical results that validate this approach, presenting
+                            a
+                            practical and replicable method to enhance the robustness of models used in medical
+                            applications. Our results suggest that synthetic feature generation with diffusion not only
+                            enhances classification in limited clinical contexts but also paves the way for future
+                            research
+                            in domains where data access remains a persistent bottleneck.
+                        </div>
                     </div>
-                </div>
 
-                <div class="aibio-card">
-                    <h5 class="session-title">Flow-Based Synthetic Data Generation: A Unified Approach for Biomedical
-                        Tasks</h5>
-                    <div class="session-authors">Tommaso Giacometti, Nico Curti, Adriano Zaghi, Daniel Remondini,
-                        Gastone Castellani
-                    </div>
-                    <button class="toggle-abstract" data-target="dga-abs5" data-show="Abstract" data-hide="Hide">
-                        Abstract
-                    </button>
-                    <div id="dga-abs5" class="session-abstract" hidden>
-                        We propose Conditional Flow Matching (CFM) as a unified and efficient generative framework
-                        applicable
-                        across diverse biomedical modalities. CFM leverages conditional optimal transport to model
-                        complex data
-                        distributions, while maintaining architectural simplicity and computational efficiency,
-                        successfully
-                        generating high-fidelity, anatomically and semantically consistent samples across multiple
-                        biomedical domains.
+                    <div class="aibio-card">
+                        <h5 class="session-title">Flow-Based Synthetic Data Generation: A Unified Approach for
+                            Biomedical
+                            Tasks</h5>
+                        <div class="session-authors">Tommaso Giacometti, Nico Curti, Adriano Zaghi, Daniel Remondini,
+                            Gastone Castellani
+                        </div>
+                        <button class="toggle-abstract" data-target="dga-abs5" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="dga-abs5" class="session-abstract" hidden>
+                            Synthetic data is becoming an essential tool for overcoming data scarcity, class imbalance,
+                            and
+                            privacy concerns in all research fields, including the biomedical one.
+                            We propose Conditional Flow Matching (CFM) as a unified and efficient generative framework
+                            applicable across diverse biomedical modalities.
+                            CFM leverages conditional optimal transport to model complex data distributions, while
+                            maintaining architectural simplicity and computational efficiency.
+                            We evaluate CFM on three representative tasks of increasing complexity in data structure. We
+                            show applications to the following case studies: (i) mixed type tabular data from Acute
+                            Myeloid
+                            Leukemia (AML) patient cohort, including genomic landscape and survival data; (ii) standard
+                            2D
+                            RGB biomedical images belonging to discrete classes, given by slit lamp eye images
+                            stratified
+                            according to conjunctival hyperemia; (iii) 3D Computed Tomography chest volumes for lung
+                            segmentation. Across these use cases, CFM generates high-fidelity, anatomically and
+                            semantically
+                            consistent samples, validated according to ad hoc metrics and pipelines. Despite some
+                            modality-specific limitations, our results highlight CFM’s versatility and potential as a
+                            general-purpose synthetic data generation framework for healthcare and biomedical domains.
+                        </div>
                     </div>
                 </div>
             </section>
@@ -850,67 +1015,93 @@
             <!-- Multimodal Techniques -->
             <section class="schedule-block" id="multimodal-techniques">
                 <h3 class="schedule-block-title">
-                    Multimodal Techniques <span class="schedule-time">(11:58–12:30)</span>
+                    Session 3: Multimodal Techniques <span class="schedule-time">(12:00–12:30)</span>
+                    <button class="toggle-abstract" data-target="group-mt" data-show="Show details"
+                            data-hide="Hide details">Show details
+                    </button>
                 </h3>
+                <div class="schedule-group" id="group-mt" hidden>
 
-                <div class="aibio-card">
-                    <h5 class="session-title">Multimodal ML Architecture for Predictive Diagnosis and Treatment of
-                        Ophthalmic Diseases</h5>
-                    <div class="session-authors">Asmaa Abdelmawgoud, Andrea Tonello</div>
-                    <button class="toggle-abstract" data-target="mm-abs1" data-show="Abstract" data-hide="Hide">
-                        Abstract
-                    </button>
-                    <div id="mm-abs1" class="session-abstract" hidden>
-                        Artificial intelligence (AI) and deep learning (DL)-based systems have gained significant
-                        attention for the
-                        diagnosis of ophthalmic diseases, including cataracts, glaucoma, diabetic retinopathy, and more.
-                        This work
-                        proposes a multimodal system integrating fundus images, patient demographics, and clinical
-                        pathology data,
-                        achieving a diagnostic accuracy of 98.7% and treatment recommendation accuracy of 93.19%.
-                        Comprehensive
-                        evaluations using confusion matrices and ROC analysis demonstrate superior performance, offering
-                        clinicians
-                        a data-driven decision-support tool to enhance precision and improve patient outcomes.
+                    <div class="aibio-card">
+                        <h5 class="session-title">Multimodal ML Architecture for Predictive Diagnosis and Treatment of
+                            Ophthalmic Diseases</h5>
+                        <div class="session-authors">Asmaa Abdelmawgoud, Andrea Tonello</div>
+                        <button class="toggle-abstract" data-target="mm-abs1" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="mm-abs1" class="session-abstract" hidden>
+                            Artificial intelligence (AI) and deep learning (DL)-based systems have gained significant
+                            attention for the diagnosis of ophthalmic diseases, including cataracts, glaucoma, diabetic
+                            retinopathy (DR), age-related macular degeneration (AMD), and retinal detachment. This work
+                            proposes a multimodal system that integrates fundus images, patient demographics, and
+                            clinical
+                            pathology data, achieving a diagnostic accuracy of 98.7% and a treatment recommendation
+                            accuracy of 93.19\%. The model employs EfficientNetB0 for image feature extraction and dense
+                            layers for processing tabular clinical data. Comprehensive evaluations using confusion
+                            matrices
+                            and ROC analysis demonstrate its superior performance. The proposed system offers clinicians
+                            an
+                            objective, data-driven decision-support tool to enhance diagnostic precision and improve
+                            patient
+                            outcomes. Keywords: Artificial intelligence, deep learning, retinal diseases, fundus images,
+                            treatment recommendation, image processing, multimodal system, patient demographics,
+                            clinical
+                            pathology.
+                        </div>
                     </div>
-                </div>
 
-                <div class="aibio-card">
-                    <h5 class="session-title">GNN-based Multimodal Analysis of Brain Anatomical &amp; Functional
-                        Features for Parkinson’s Disease</h5>
-                    <div class="session-authors">Patrizia Ribino, Maria Mannone, Alessandro Pensabene</div>
-                    <button class="toggle-abstract" data-target="mm-abs2" data-show="Abstract" data-hide="Hide">
-                        Abstract
-                    </button>
-                    <div id="mm-abs2" class="session-abstract" hidden>
-                        Parkinson’s Disease (PD) is a progressive neurodegenerative disorder characterized by motor
-                        dysfunction and,
-                        in many cases, cognitive impairment. This study presents a Graph Neural Network framework that
-                        leverages both
-                        structural anatomical and functional connectivity to enhance the classification of PD patients
-                        and the
-                        identification of cognitive impairment subtypes. Experiments show GNNs effectively reveal
-                        distinct roles of
-                        anatomical and functional connectivity in disease phenotyping.
+                    <div class="aibio-card">
+                        <h5 class="session-title">GNN-based Multimodal Analysis of Brain Anatomical &amp; Functional
+                            Features for Parkinson’s Disease</h5>
+                        <div class="session-authors">Patrizia Ribino, Maria Mannone, Alessandro Pensabene</div>
+                        <button class="toggle-abstract" data-target="mm-abs2" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="mm-abs2" class="session-abstract" hidden>
+                            Parkinson’s Disease (PD) is a progressive neurodegenerative disorder characterized by motor
+                            dysfunction and, in many cases, cognitive impairment. While substantial progress has been
+                            made
+                            in understanding PD’s clinical manifestations, distinguishing PD patients from
+                            healthy controls and identifying cognitive impairment subtypes remains challenging. In this
+                            study, we present a Graph Neural Network (GNN) framework that leverages both structural
+                            anatomical data (SA) and functional connectivity (FC) to enhance the classification of PD
+                            patients and
+                            the stratification of cognitive impairment subtypes. Our approach includes an ablation study
+                            to
+                            evaluate the individual and combined contributions of SA and FC in distinguishing between PD
+                            patients and healthy controls (HC) and between PD patients with normal cognition (PD-NC)
+                            and those with mild cognitive impairment (PD-MCI). Experimental results show that the
+                            GNN-based
+                            approach reveals the distinct roles of
+                            anatomical and functional connectivity in disease phenotypes
+                        </div>
                     </div>
-                </div>
 
-                <div class="aibio-card">
-                    <h5 class="session-title">Digital Twins in Healthcare: Ethical challenges of Data Donation</h5>
-                    <div class="session-authors">Martina Baltuzzi</div>
-                    <button class="toggle-abstract" data-target="mm-abs3" data-show="Abstract" data-hide="Hide">
-                        Abstract
-                    </button>
-                    <div id="mm-abs3" class="session-abstract" hidden>
-                        Digital Twins can transform healthcare by improving personalized medicine and reducing treatment
-                        costs.
-                        Their effectiveness depends on large, inclusive datasets. Current challenges include fragmented
-                        health
-                        records, underrepresentation, and algorithmic bias. This article analyzes how data altruism and
-                        donation
-                        mechanisms—emerging in the EU Data Governance Act—can help address these challenges, while
-                        highlighting the
-                        related ethical concerns and the importance of data quality and equity.
+                    <div class="aibio-card">
+                        <h5 class="session-title">Digital Twins in Healthcare: Ethical challenges of Data Donation</h5>
+                        <div class="session-authors">Martina Baltuzzi</div>
+                        <button class="toggle-abstract" data-target="mm-abs3" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="mm-abs3" class="session-abstract" hidden>
+                            Digital Twins, due to their ability to simulate and predict complex systems, are set to
+                            transform healthcare by improving personalized medicine, poten-tially tailoring diagnostic
+                            and
+                            reducing treatment costs. However, as their effectiveness depends on the availability of
+                            large,
+                            high-quality and inclusive datasets, current challenges pertain to fragmented health
+                            records,
+                            underrepresentation of minority groups, and the risk of algorithmic bias resulting from
+                            flawed
+                            information. To address these issues, the concept of data altruism, as set out in the EU
+                            Data
+                            Governance Act, has emerged as a promising strategy to diversify and improve the data pools
+                            needed to train DTs. Nevertheless, the ethical implications of such practices remain
+                            significant. This article explores the potential of the adoption of data donation mechanisms
+                            to
+                            better medical DTs, taking the first steps in analyzing related ethical challenges while
+                            highlighting the importance of data quality and equity.
+                        </div>
                     </div>
                 </div>
             </section>
@@ -919,244 +1110,527 @@
             <section class="schedule-block" id="lunch-break">
                 <h3 class="schedule-block-title">
                     Lunch Break <span class="schedule-time">(12:30–14:00)</span>
+                    <button class="toggle-abstract" data-target="group-lb" data-show="Show details"
+                            data-hide="Hide details">Show details
+                    </button>
                 </h3>
-                <div class="aibio-card">
-                    <h5 class="session-title">Lunch Break</h5>
-                    <div class="session-authors">12:30–14:00</div>
-                    <p class="session-text">Enjoy lunch and informal scientific exchange with fellow participants.</p>
+                <div class="schedule-group" id="group-lb" hidden>
+                    <div class="aibio-card">
+                        <h5 class="session-title">Lunch Break</h5>
+                        <div class="session-authors">12:30–14:00</div>
+                        <p class="session-text">Enjoy lunch and informal scientific exchange with fellow
+                            participants.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Invited Talks -->
+            <section class="schedule-block" id="keynote-2">
+                <h3 class="schedule-block-title">
+                    Keynote Session 2: Dr. Soumick Chatterjee <span class="schedule-time">(14:00–14:45)</span>
+                    <button class="toggle-abstract" data-target="group-k2" data-show="Show details"
+                            data-hide="Hide details">Show details
+                    </button>
+                </h3>
+                <div class="schedule-group" id="group-k2" hidden>
+                    <div class="aibio-card">
+                        <h5 class="session-title">AI-Powered Discovery Across Imaging Scales: Linking Morphology to
+                            Genetics
+                            Without Annotation</h5>
+                        <div class="session-authors">Dr. Soumick Chatterjee (Human Technopole Milan &amp; OvGU Germany)
+                        </div>
+                        <button class="toggle-abstract" data-target="keynote-abs-2">Show Abstract / Speaker</button>
+                        <div id="keynote-abs-2" class="session-abstract" hidden>
+                            <p>The large-scale digitisation of biological archives, encompassing everything from
+                                histology
+                                to
+                                whole-body imaging, now affords us a remarkable opportunity to probe the foundations of
+                                human
+                                health
+                                and disease. Yet, realising the full potential of these data has been persistently
+                                constrained
+                                by
+                                the fundamental bottleneck of manual, expert annotation - a process both laborious and
+                                inherently
+                                subjective. This talk explores a common strategic principle for overcoming this: using
+                                unsupervised
+                                AI to learn phenotypes directly from images, without annotation.</p>
+
+                            <p>This talk will present two powerful, yet distinct, applications of this principle, each
+                                tackling
+                                a
+                                different biological scale. The first one delves into the microscopic world, where a
+                                self-supervised
+                                Vision Transformer interrogates histology to quantify pathology and predict local gene
+                                expression,
+                                directly linking tissue morphology to its underlying molecular state. The second project
+                                at
+                                the
+                                macroscopic scale. It uses a diffusion autoencoder on cardiac MRIs to distil novel,
+                                heritable
+                                phenotypes. These phenotypes are then taken forward to genome-wide association studies,
+                                linking
+                                whole-organ structure to population genetics and disease risk. Though employing
+                                different
+                                methods
+                                and investigating different scales, both lines of inquiry converge on the same
+                                fundamental
+                                goal:
+                                forging a robust, scalable link between morphology and genomics. Together, they
+                                demonstrate
+                                a
+                                powerful new paradigm for biological discovery.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- KEYNOTE 3 (ex Invited Talk 2, pomeriggio) -->
+            <section class="schedule-block" id="keynote-3">
+                <h3 class="schedule-block-title">
+                    Keynote session 3: Prof. Federico Cabitza <span class="schedule-time">(14:45–15:30)</span>
+                    <button class="toggle-abstract" data-target="group-k3" data-show="Show details"
+                            data-hide="Hide details">Show details
+                    </button>
+                </h3>
+                <div class="schedule-group" id="group-k3" hidden>
+                    <div class="aibio-card">
+                        <h5 class="session-title">Why Accuracy Isn’t Enough: Rethinking Model Evaluation in Clinical
+                            AI</h5>
+                        <div class="session-authors">Prof. Federico Cabitza (University of Milano-Bicocca)</div>
+                        <button class="toggle-abstract" data-target="keynote-abs-3">Show Abstract / Speaker</button>
+                        <div id="keynote-abs-3" class="session-abstract" hidden>
+                            <p>Despite widespread use, AI systems in healthcare are often evaluated solely by accuracy.
+                                In
+                                this
+                                talk, Prof. Cabitza questions this approach, proposing a multidimensional framework for
+                                model
+                                evaluation.</p>
+
+                            <p>Drawing from recent lab developments, he introduces new metrics and visualization tools
+                                that
+                                reflect
+                                data reliability, case similarity, and clinical utility. He will present a public
+                                platform
+                                that
+                                applies these insights, helping stakeholders understand AI behavior beyond
+                                averages—especially
+                                in
+                                uncertain and diverse clinical scenarios.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- COFFEE BREAK 2 -->
+            <section class="schedule-block" id="coffee-break-2">
+                <h3 class="schedule-block-title">
+                    Coffee Break <span class="schedule-time">(15:30–16:00)</span>
+                    <button class="toggle-abstract" data-target="group-cb2" data-show="Show details"
+                            data-hide="Hide details">Show details
+                    </button>
+                </h3>
+                <div class="schedule-group" id="group-cb2" hidden>
+                    <div class="aibio-card">
+                        <h5 class="session-title">Afternoon Coffee Break</h5>
+                        <div class="session-authors">15:30–16:00</div>
+                        <p class="session-text">Take a break, recharge and meet speakers or peers.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI for Disease (afternoon) -->
+            <section class="schedule-block" id="ai-for-disease-afternoon">
+                <h3 class="schedule-block-title">
+                    Session 4: AI for Disease - Part 2 <span class="schedule-time">(16:00–16:40)</span>
+                    <button class="toggle-abstract" data-target="group-aida" data-show="Show details"
+                            data-hide="Hide details">Show details
+                    </button>
+                </h3>
+                <div class="schedule-group" id="group-aida" hidden>
+
+                    <div class="aibio-card">
+                        <h5 class="session-title">Self-Attention as a Predictor of EEG Anomalies</h5>
+                        <div class="session-authors">Natalia Koliou, Maria Sierra, Christoforos Romesis, Stasinos
+                            Konstantopoulos, Luis Montesano
+                        </div>
+                        <button class="toggle-abstract" data-target="aid-af-abs1" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="aid-af-abs1" class="session-abstract" hidden>
+                            One of the main concerns when dealing with electroencephalographic signals (EEG) is assuring
+                            that
+                            clean data with a high signal-to-noise ratio is recorded. The relevant denoising methods
+                            tend to
+                            have a narrow scope of application as what is noise for one application might be useful
+                            signal
+                            for
+                            some other application and there no general-purpose approach (or even paradigm) that works
+                            best
+                            across domains and applications. Machine learning methods are often used for this task, by
+                            training
+                            Autoencoders and Transformers on reconstruction and prediction, and then assuming the
+                            reconstruction/prediction error as an indication of anomalies. These approaches only take
+                            into
+                            account the morphology of the stream, and are not aware of the different, often highly
+                            contextualized, aspects of artifacts. In this article we explore the novel idea that we can
+                            create
+                            application-specific artifact detectors by training an attention-based deep neural network
+                            and
+                            then
+                            extracting from the attention layer information about what is ignored. This removes the most
+                            pressing challenge of artifact detection, namely that artifacts are vaguely defined and thus
+                            difficult to directly supervise, and allows application-specific artifact patterns to be
+                            extracted
+                            from non artifact-related supervision. We evaluated our method using electroencephalogram
+                            (EEG)
+                            signals on a sleep-stage labeling task. The performance of the proposed approach was
+                            compared
+                            against reconstruction/prediction error and against EEG-specific noise detection methods.
+                            The
+                            results indicate that the proposed method is a promising task-agnostic tool for anomaly
+                            detection in
+                            streaming data.
+                        </div>
+                    </div>
+
+                    <div class="aibio-card">
+                        <h5 class="session-title">Cross-dataset Multivariate Time-series Model for Parkinson’s Diagnosis
+                            via
+                            Keyboard Dynamics</h5>
+                        <div class="session-authors">Arianna Francesconi, Donato Cappetta, Fabio Rebecchi, Paolo Soda,
+                            Valerio
+                            Guarrasi, Rosa Sicilia
+                        </div>
+                        <button class="toggle-abstract" data-target="aid-af-abs2" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="aid-af-abs2" class="session-abstract" hidden>
+                            Parkinson’s disease (PD) presents a growing global challenge, affecting over 10 million
+                            individuals,
+                            with prevalence expected to double by 2040. Early diagnosis remains difficult due to the
+                            late
+                            emergence of motor symptoms and limitations of traditional clinical assessments. In this
+                            study,
+                            we
+                            propose a novel pipeline that leverages keystroke dynamics as a non-invasive and scalable
+                            biomarker
+                            for remote PD screening and telemonitoring. Our methodology involves three main stages: (i)
+                            preprocessing of data from four distinct datasets, extracting four temporal signals and
+                            addressing
+                            class imbalance through the comparison of three methods; (ii) pre-training eight
+                            state-of-the-art
+                            deep‐learning architectures on the two largest datasets, optimizing temporal windowing,
+                            stride,
+                            and
+                            other hyperparameters; (iii) fine-tuning on an intermediate-sized dataset and perform
+                            external
+                            validation on a fourth, independent cohort. Our results demonstrate that hybrid
+                            convolutional–recurrent and transformer‑based models achieve strong external validation
+                            performance,
+                            with AUC-ROC scores exceeding 90% and F1-Score over 70%. Notably, a purely convolutional
+                            model
+                            (TCN)
+                            attains an AUC-ROC of 91.14% in external validation, outperforming existing methods that
+                            rely
+                            solely
+                            on internal validation. These findings underscore the potential of keystroke dynamics as a
+                            reliable
+                            digital biomarker for PD, offering a promising avenue for early detection and continuous
+                            monitoring.
+                        </div>
+                    </div>
+
+                    <div class="aibio-card">
+                        <h5 class="session-title">Assessment and Compliance of Personalized ML Pharmacokinetic Models in
+                            the
+                            European Regulatory Environment</h5>
+                        <div class="session-authors">Silvia Corte Metto, Federico Magnani, Gastone Castellani</div>
+                        <button class="toggle-abstract" data-target="aid-af-abs3" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="aid-af-abs3" class="session-abstract" hidden>
+                            The transformative potential of Deep Learning for the field of pharmacomet-rics is being
+                            extensively
+                            investigated by the scientific community. Latest models provide the innovative capability of
+                            differentiating the predictions at the level of individual patients, greatly fostering the
+                            personalization of the therapy. Still, due to the high-risk context of their application,
+                            there’s
+                            the possibility that such technologies will not be employed soon in clinical set-tings at
+                            large
+                            scale. The European Union, through regulations such as the Ar-tificial Intelligence Act and
+                            Medical
+                            Device Regulation, subjects the adoption of AI-based systems to careful risk assessment
+                            procedures,
+                            quality manage-ment, post market monitoring and, possibly, explicit safety thresholds. The
+                            safety of
+                            the individual patient cannot be exclusively derived from suitable and performant models;
+                            instead,
+                            it emerges from the interaction between the developer, the deployer and the user of the
+                            application.
+                            Accordingly, we pre-sent a harmonized methodology that explicitly links technical design
+                            deci-sions
+                            to sound legal reasoning. Developed through the interdisciplinary col-laboration advocated
+                            in
+                            the
+                            literature and built on the tradition of jurimetrics, our proposed standard combines
+                            empirical
+                            performance metrics and theoret-ical engineering frameworks with formally verifiable
+                            compliance
+                            criteria. By basing technical requirements on measurable legal approximations, jurimet-rics
+                            represents an epistemic bridge between pharmacometrics and regulatory oversight, guiding
+                            developers
+                            towards legal-by-design strategies that allow the seamless transition of technology from the
+                            research lab to routine care, and provides auditable evidence that protects stakeholders
+                            from
+                            liability, creating a common benchmark for the safe, compliant and equitable adop-tion of
+                            AI-driven
+                            pharmacometrics systems in healthcare.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Image Segmentation -->
+            <section class="schedule-block" id="image-segmentation">
+                <h3 class="schedule-block-title">
+                    Session 5: Image Segmentation <span class="schedule-time">(16:40–17:20)</span>
+                    <button class="toggle-abstract" data-target="group-is" data-show="Show details"
+                            data-hide="Hide details">Show details
+                    </button>
+                </h3>
+                <div class="schedule-group" id="group-is" hidden>
+
+                    <div class="aibio-card">
+                        <h5 class="session-title">Quality-Guided Focal Loss: Enhancing Minority Class Detection in
+                            Haematological Imaging</h5>
+                        <div class="session-authors">Thabang Fenge Isaka, Claire Wynne, Jane Courtney</div>
+                        <button class="toggle-abstract" data-target="is-abs1" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="is-abs1" class="session-abstract" hidden>
+                            In the critical race against malaria, the most dangerous parasites often hide in plain
+                            sight.
+                            When
+                            parasitaemia falls below 1%, precisely when early detection matters most, conventional AI
+                            detection
+                            systems falter despite impressive aggregate metrics. This paradox of "seeing everything
+                            except
+                            what
+                            matters most" stems from a fundamental detection dilemma: infected cells comprise a
+                            vanishingly
+                            small minority that conventional approaches systematically overlook. We propose a systematic
+                            Quality-Guided Focal Loss (QGFL), a framework that reconceptualizes how detection systems
+                            learn
+                            from
+                            imbalanced data. By integrating class-specific focusing parameters, quality-guided
+                            weighting,
+                            and
+                            spatial awareness through UIoU, QGFL achieves a remarkable improvement in detecting infected
+                            cells
+                            in the clinically vital 1–3% parasitaemia range. Our cross-dataset validation confirms
+                            QGFL’s
+                            generalizability across diverse imaging conditions without requiring dataset-specific
+                            tuning.
+                            This
+                            work advances the approach to minority class detection in medical imaging, demonstrating how
+                            prediction quality can guide model optimization, ensuring that what matters clinically also
+                            matters
+                            computationally.
+                        </div>
+                    </div>
+
+                    <div class="aibio-card">
+                        <h5 class="session-title">Auto-prompting Foundation Models for Clinical Segmentation: The Case
+                            of
+                            Pathological Scapula</h5>
+                        <div class="session-authors">Michele Signori, Mattia Savardi, Fabio Casiraghi, Maristella
+                            Francesca
+                            Saccomanno, Giuseppe Milano, Alberto Signoroni
+                        </div>
+                        <button class="toggle-abstract" data-target="is-abs2" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="is-abs2" class="session-abstract" hidden>
+                            Automatic segmentation of the scapula in CT volumes is critical for surgical planning and
+                            other
+                            clinically relevant morphometric tasks, but especially pathological cases pose significant
+                            challenges due to high anatomical variability, complex geometry, and proximity to adjacent
+                            structures. Standard deep learning methods, including large-scale segmentation models such
+                            as
+                            TotalSegmentator, often fail on this task due to the scarcity of high-quality, annotated
+                            pathological data. Conversely, general-purpose foundation models such as SAM2 require manual
+                            prompting, precluding full automation.
+                            In this work, we introduce a novel, fully automatic, and prompt-free segmentation framework.
+                            Our
+                            key
+                            idea is to cascade existing tools, repurposing the imperfect output of an automatic
+                            segmentation
+                            model (TotalSegmentator) not as a final result, but as a mechanism to generate robust 3D
+                            prompts
+                            for
+                            a SAM-based foundation model. This approach creates a fully automatic pipeline that requires
+                            no
+                            user
+                            interaction or task-specific fine-tuning.
+                            We evaluated our framework on a challenging dataset of about 40 expert-annotated
+                            pathological
+                            scapulae. Quantitative and qualitative results demonstrate that our method significantly
+                            outperforms
+                            both the baseline automatic segmentation model and prompted general-purpose medical
+                            foundation
+                            models (MedSAM2). Our auto-prompting strategy offers a powerful and data-efficient paradigm
+                            for
+                            tackling complex segmentation tasks in clinically realistic, low-data scenarios, bridging
+                            the
+                            gap
+                            between large-scale models and specialized clinical needs.
+                        </div>
+                    </div>
+
+                    <div class="aibio-card">
+                        <h5 class="session-title">Injection of pre-trained ImageNet layers to U-Net decoder for
+                            biomedical
+                            image
+                            segmentation</h5>
+                        <div class="session-authors">Maciej Szymkowski</div>
+                        <button class="toggle-abstract" data-target="is-abs3" data-show="Abstract" data-hide="Hide">
+                            Abstract
+                        </button>
+                        <div id="is-abs3" class="session-abstract" hidden>
+                            Artificial intelligence (AI) and machine learning (ML) play a crucial role in novel medical
+                            and
+                            biomedical solutions. These algorithms can be consumed at different stages of data
+                            processing.
+                            One of the best examples is related to segmenting the region of interest (ROI) from an
+                            image.
+                            Despite the fact that there are many models available online, it can be hard to align them
+                            with
+                            the
+                            scope of the specific research. This is related to the fact that biomedical samples can
+                            differ
+                            due to
+                            device quality or certain specific settings applied during data acquisition. In this work,
+                            we
+                            focus on
+                            the spatial videos of single Engineered Heart Tissue (EHT) cell. The goal was to segment the
+                            cell
+                            from the background that is not homogeneous. During the research, we compared several 2D
+                            U-Net
+                            models
+                            with different pre-trained backbones (ResNet-50, VGG-16, InceptionResNetV2, and also
+                            training
+                            from scratch). Each of them was compared on the basis of the results of Dice and
+                            Intersection
+                            over
+                            Union (IoU) metrics. The best model reached the Dice coefficient equal to 0,945705 and the
+                            IoU
+                            equal
+                            to 0,897424.
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- CLOSING -->
+            <section class="schedule-block" id="closing">
+                <h3 class="schedule-block-title">
+                    Closing <span class="schedule-time">(17:20–17:30)</span>
+                    <button class="toggle-abstract" data-target="group-close" data-show="Show details"
+                            data-hide="Hide details">Show details
+                    </button>
+                </h3>
+                <div class="schedule-group" id="group-close" hidden>
+                    <div class="aibio-card">
+                        <h5 class="session-title">Conclusions &amp; Farewell</h5>
+                        <div class="session-authors">The Organizing Committee</div>
+                        <p class="session-text">Final remarks, acknowledgments and next steps for the AIBio
+                            community.</p>
+                    </div>
                 </div>
             </section>
         </div>
 
-        <!-- Invited Talks -->
-        <section class="schedule-block" id="keynote-2">
-            <h3 class="schedule-block-title">
-                Keynote 2 <span class="schedule-time">(14:00–14:45)</span>
-            </h3>
-            <div class="aibio-card">
-                <h5 class="session-title">AI-Powered Discovery Across Imaging Scales: Linking Morphology to Genetics
-                    Without Annotation</h5>
-                <div class="session-authors">Dr. Soumick Chatterjee (Human Technopole Milan &amp; OvGU Germany)</div>
-                <button class="toggle-abstract" data-target="keynote-abs-2">Show Abstract / Speaker</button>
-                <div id="keynote-abs-2" class="session-abstract" hidden>
-                    <p>The large-scale digitisation of biological archives, encompassing everything from histology to
-                        whole-body imaging, now affords us a remarkable opportunity to probe the foundations of human
-                        health
-                        and disease. Yet, realising the full potential of these data has been persistently constrained
-                        by
-                        the fundamental bottleneck of manual, expert annotation - a process both laborious and
-                        inherently
-                        subjective. This talk explores a common strategic principle for overcoming this: using
-                        unsupervised
-                        AI to learn phenotypes directly from images, without annotation.</p>
 
-                    <p>This talk will present two powerful, yet distinct, applications of this principle, each tackling
-                        a
-                        different biological scale. The first one delves into the microscopic world, where a
-                        self-supervised
-                        Vision Transformer interrogates histology to quantify pathology and predict local gene
-                        expression,
-                        directly linking tissue morphology to its underlying molecular state. The second project at the
-                        macroscopic scale. It uses a diffusion autoencoder on cardiac MRIs to distil novel, heritable
-                        phenotypes. These phenotypes are then taken forward to genome-wide association studies, linking
-                        whole-organ structure to population genetics and disease risk. Though employing different
-                        methods
-                        and investigating different scales, both lines of inquiry converge on the same fundamental goal:
-                        forging a robust, scalable link between morphology and genomics. Together, they demonstrate a
-                        powerful new paradigm for biological discovery.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- KEYNOTE 3 (ex Invited Talk 2, pomeriggio) -->
-        <section class="schedule-block" id="keynote-3">
-            <h3 class="schedule-block-title">
-                Keynote 3 <span class="schedule-time">(14:45–15:30)</span>
-            </h3>
-            <div class="aibio-card">
-                <h5 class="session-title">Why Accuracy Isn’t Enough: Rethinking Model Evaluation in Clinical AI</h5>
-                <div class="session-authors">Prof. Federico Cabitza (University of Milano-Bicocca)</div>
-                <button class="toggle-abstract" data-target="keynote-abs-3">Show Abstract / Speaker</button>
-                <div id="keynote-abs-3" class="session-abstract" hidden>
-                    <p>Despite widespread use, AI systems in healthcare are often evaluated solely by accuracy. In this
-                        talk, Prof. Cabitza questions this approach, proposing a multidimensional framework for model
-                        evaluation.</p>
-
-                    <p>Drawing from recent lab developments, he introduces new metrics and visualization tools that
-                        reflect
-                        data reliability, case similarity, and clinical utility. He will present a public platform that
-                        applies these insights, helping stakeholders understand AI behavior beyond averages—especially
-                        in
-                        uncertain and diverse clinical scenarios.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- COFFEE BREAK 2 -->
-        <section class="schedule-block" id="coffee-break-2">
-            <h3 class="schedule-block-title">
-                Coffee Break <span class="schedule-time">(15:30–16:00)</span>
-            </h3>
-            <div class="aibio-card">
-                <h5 class="session-title">Afternoon Coffee Break</h5>
-                <div class="session-authors">15:30–16:00</div>
-                <p class="session-text">Take a break, recharge and meet speakers or peers.</p>
-            </div>
-        </section>
-
-        <!-- AI for Disease (afternoon) -->
-        <section class="schedule-block" id="ai-for-disease-afternoon">
-            <h3 class="schedule-block-title">
-                AI for Disease <span class="schedule-time">(16:00–16:36)</span>
-            </h3>
-
-            <div class="aibio-card">
-                <h5 class="session-title">Self-Attention as a Predictor of EEG Anomalies</h5>
-                <div class="session-authors">Natalia Koliou, Maria Sierra, Christoforos Romesis, Stasinos
-                    Konstantopoulos, Luis Montesano
-                </div>
-                <button class="toggle-abstract" data-target="aid-af-abs1" data-show="Abstract" data-hide="Hide">
-                    Abstract
-                </button>
-                <div id="aid-af-abs1" class="session-abstract" hidden>
-                    We explore the novel idea of creating application-specific artifact detectors for EEG signals by
-                    training an
-                    attention-based deep neural network and then extracting anomaly information from the attention
-                    layer. Unlike
-                    classic autoencoders and transformers relying on reconstruction or prediction error, our approach
-                    captures
-                    contextual artifact patterns, allowing application-specific feature extraction from non
-                    artifact-related
-                    supervision. Comparison with EEG-specific noise detection methods shows this method is a promising
-                    task-agnostic
-                    tool for anomaly detection.
-                </div>
-            </div>
-
-            <div class="aibio-card">
-                <h5 class="session-title">Cross-dataset Multivariate Time-series Model for Parkinson’s Diagnosis via
-                    Keyboard Dynamics</h5>
-                <div class="session-authors">Arianna Francesconi, Donato Cappetta, Fabio Rebecchi, Paolo Soda, Valerio
-                    Guarrasi, Rosa Sicilia
-                </div>
-                <button class="toggle-abstract" data-target="aid-af-abs2" data-show="Abstract" data-hide="Hide">
-                    Abstract
-                </button>
-                <div id="aid-af-abs2" class="session-abstract" hidden>
-                    We present a novel pipeline leveraging keystroke dynamics as a non-invasive and scalable biomarker
-                    for remote
-                    Parkinson’s Disease screening and telemonitoring. Through pre-processing of diverse datasets, class
-                    imbalance
-                    handling, pre-training/fine-tuning on temporal signals, and external validation, results show hybrid
-                    models
-                    achieve AUC-ROC scores >90 and F1-score >70 for external validation. Our findings highlight
-                    keystroke dynamics
-                    as a reliable digital biomarker for early detection and continuous PD monitoring.
-                </div>
-            </div>
-
-            <div class="aibio-card">
-                <h5 class="session-title">Assessment and Compliance of Personalized ML Pharmacokinetic Models in the
-                    European Regulatory Environment</h5>
-                <div class="session-authors">Silvia Corte Metto, Federico Magnani, Gastone Castellani</div>
-                <button class="toggle-abstract" data-target="aid-af-abs3" data-show="Abstract" data-hide="Hide">
-                    Abstract
-                </button>
-                <div id="aid-af-abs3" class="session-abstract" hidden>
-                    We present a harmonized methodology linking technical design decisions to legal reasoning for risk
-                    assessment
-                    and regulatory compliance of AI-driven pharmacokinetic models. Built on jurimetrics, our standard
-                    combines
-                    empirical metrics with formal compliance, providing auditable evidence to protect stakeholders from
-                    liability
-                    and ensuring safe, equitable, and compliant adoption in healthcare.
-                </div>
-            </div>
-        </section>
-
-        <!-- Image Segmentation -->
-        <section class="schedule-block" id="image-segmentation">
-            <h3 class="schedule-block-title">
-                Image Segmentation <span class="schedule-time">(16:36–17:10)</span>
-            </h3>
-
-            <div class="aibio-card">
-                <h5 class="session-title">Quality-Guided Focal Loss: Enhancing Minority Class Detection in
-                    Haematological Imaging</h5>
-                <div class="session-authors">Thabang Fenge Isaka, Claire Wynne, Jane Courtney</div>
-                <button class="toggle-abstract" data-target="is-abs1" data-show="Abstract" data-hide="Hide">
-                    Abstract
-                </button>
-                <div id="is-abs1" class="session-abstract" hidden>
-                    In the critical race against malaria, the most dangerous parasites often hide in plain sight. When
-                    parasitaemia
-                    falls below 1%, conventional AI systems falter despite impressive aggregate metrics. We propose
-                    Quality-Guided
-                    Focal Loss (QGFL), a framework that reconceptualizes how detection systems learn from imbalanced
-                    data. QGFL
-                    achieves a remarkable improvement in detecting infected cells in the most clinically vital range,
-                    reliably
-                    identifying minority classes in medical imaging.
-                </div>
-            </div>
-
-            <div class="aibio-card">
-                <h5 class="session-title">Auto-prompting Foundation Models for Clinical Segmentation: The Case of
-                    Pathological Scapula</h5>
-                <div class="session-authors">Michele Signori, Mattia Savardi, Fabio Casiraghi, Maristella Francesca
-                    Saccomanno, Giuseppe Milano, Alberto Signoroni
-                </div>
-                <button class="toggle-abstract" data-target="is-abs2" data-show="Abstract" data-hide="Hide">
-                    Abstract
-                </button>
-                <div id="is-abs2" class="session-abstract" hidden>
-                    A novel, fully automatic, and prompt-free segmentation framework for pathological scapulae CT data.
-                    Our method
-                    utilizes imperfect outputs of large segmentation models to generate robust 3D prompts for foundation
-                    models.
-                    Quantitative and qualitative validation demonstrates significantly better results in challenging,
-                    low-data
-                    clinical scenarios, bridging the gap between general-purpose models and clinical needs.
-                </div>
-            </div>
-
-            <div class="aibio-card">
-                <h5 class="session-title">Injection of pre-trained ImageNet layers to U-Net decoder for biomedical image
-                    segmentation</h5>
-                <div class="session-authors">Maciej Szymkowski</div>
-                <button class="toggle-abstract" data-target="is-abs3" data-show="Abstract" data-hide="Hide">
-                    Abstract
-                </button>
-                <div id="is-abs3" class="session-abstract" hidden>
-                    We evaluate the effectiveness of inserting pretrained ImageNet layers to the decoder of a U-Net
-                    architecture
-                    for biomedical image segmentation, comparing different backbones and approaches. Results show this
-                    simple
-                    modification can yield significant performance gains—offering a practical method to leverage general
-                    image
-                    representations for specialized clinical data segmentation.
-                </div>
-            </div>
-        </section>
-
-        <!-- CLOSING -->
-        <section class="schedule-block" id="closing">
-            <h3 class="schedule-block-title">
-                Closing <span class="schedule-time">(17:10–End)</span>
-            </h3>
-            <div class="aibio-card">
-                <h5 class="session-title">Conclusions &amp; Farewell</h5>
-                <div class="session-authors">The Organizing Committee</div>
-                <p class="session-text">Final remarks, acknowledgments and next steps for the AIBio community.</p>
-            </div>
-        </section>
     </div>
 </section>
 <!-- organizing committee-->
 <section class="page-section" id="organizing-committee">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Organizing Committee</h2>
+            <h2 class="section-heading text-uppercase">Workshop Chair</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/tommasino.jpeg" alt="Cristian Tommasino"/>
+                    <h4>Cristian Tommasino</h4>
+                    <p class="text-muted"> Department of Electrical Engineering <br> and Information Technologies,
+                        University of
+                        Naples Federico II, Naples, Italy </p>
+                    <!--a class="btn btn-dark btn-social mx-2" href="#!"><i class="material-icons">public</i> </a-->
+                    <a class="btn btn-dark btn-social mx-2"
+                       href="https://scholar.google.it/citations?hl=en&user=kTJBBRYAAAAJ" target="_blank"><i
+                            class="material-icons">school</i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="mailto:cristian.tommasino@unina.it"><i
+                            class="material-icons">email</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Program Chairs</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/russo.jpg" alt="Cristiano Russo"/>
+                    <h4>Cristiano Russo</h4>
+                    <p class="text-muted"> Department of Electrical Engineering<br> and Information Technologies,
+                        University of
+                        Naples Federico II, Naples, Italy </p>
+                    <!--a class="btn btn-dark btn-social mx-2" href="#!"><i class="material-icons">public</i> </a-->
+                    <a class="btn btn-dark btn-social mx-2"
+                       href="https://scholar.google.it/citations?hl=en&user=MWlBFpgAAAAJ" target="_blank"><i
+                            class="material-icons">school</i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="mailto:cristiano.russo@unina.it"><i
+                            class="material-icons">email</i></a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/MCDC.jpg" alt="Mariachiara di Cosmo"/>
+                    <h4>Mariachiara Di Cosmo</h4>
+                    <p class="text-muted">School of Advanced Studies Sant'Anna Pisa, Italy</p>
+                    <a class="btn btn-dark btn-social mx-2"
+                       href="https://scholar.google.it/citations?hl=en&user=KvOMYyUAAAAJ" target="_blank"><i
+                            class="material-icons">school</i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="mailto:mariachiara.dicosmo@santannapisa.it"><i
+                            class="material-icons">email</i></a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/MB.jpg" alt="Michele Bernardini"/>
+                    <h4>Michele Bernardini</h4>
+                    <p class="text-muted">Università degli Studi eCampus</p>
+                    <!--a class="btn btn-dark btn-social mx-2" href="#!"><i class="material-icons">public</i> </a-->
+                    <a class="btn btn-dark btn-social mx-2"
+                       href="https://scholar.google.it/citations?user=5qsGL_YAAAAJ&hl=en" target="_blank"><i
+                            class="material-icons">school</i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="mailto:michele.bernardini@uniecampus.it"><i
+                            class="material-icons">email</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Organizing Committee Members</h2>
         </div>
         <div class="row">
             <div class="col-lg-3">
@@ -1222,62 +1696,6 @@
             </div>
             <div class="col-lg-3">
                 <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="assets/img/team/russo.jpg" alt="Cristiano Russo"/>
-                    <h4>Cristiano Russo</h4>
-                    <p class="text-muted"> Department of Electrical Engineering<br> and Information Technologies,
-                        University of
-                        Naples Federico II, Naples, Italy </p>
-                    <!--a class="btn btn-dark btn-social mx-2" href="#!"><i class="material-icons">public</i> </a-->
-                    <a class="btn btn-dark btn-social mx-2"
-                       href="https://scholar.google.it/citations?hl=en&user=MWlBFpgAAAAJ" target="_blank"><i
-                            class="material-icons">school</i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="mailto:cristiano.russo@unina.it"><i
-                            class="material-icons">email</i></a>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="assets/img/team/tommasino.jpeg" alt="Cristian Tommasino"/>
-                    <h4>Cristian Tommasino</h4>
-                    <p class="text-muted"> Department of Electrical Engineering <br> and Information Technologies,
-                        University of
-                        Naples Federico II, Naples, Italy </p>
-                    <!--a class="btn btn-dark btn-social mx-2" href="#!"><i class="material-icons">public</i> </a-->
-                    <a class="btn btn-dark btn-social mx-2"
-                       href="https://scholar.google.it/citations?hl=en&user=kTJBBRYAAAAJ" target="_blank"><i
-                            class="material-icons">school</i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="mailto:cristian.tommasino@unina.it"><i
-                            class="material-icons">email</i></a>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="assets/img/team/MCDC.jpg" alt="Mariachiara di Cosmo"/>
-                    <h4>Mariachiara Di Cosmo</h4>
-                    <p class="text-muted">School of Advanced Studies Sant'Anna Pisa, Italy</p>
-                    <a class="btn btn-dark btn-social mx-2"
-                       href="https://scholar.google.it/citations?hl=en&user=KvOMYyUAAAAJ" target="_blank"><i
-                            class="material-icons">school</i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="mailto:mariachiara.dicosmo@santannapisa.it"><i
-                            class="material-icons">email</i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-3">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="assets/img/team/MB.jpg" alt="Michele Bernardini"/>
-                    <h4>Michele Bernardini</h4>
-                    <p class="text-muted">Università degli Studi eCampus</p>
-                    <!--a class="btn btn-dark btn-social mx-2" href="#!"><i class="material-icons">public</i> </a-->
-                    <a class="btn btn-dark btn-social mx-2"
-                       href="https://scholar.google.it/citations?user=5qsGL_YAAAAJ&hl=en" target="_blank"><i
-                            class="material-icons">school</i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="mailto:michele.bernardini@uniecampus.it"><i
-                            class="material-icons">email</i></a>
-                </div>
-            </div>
-            <div class="offset-lg-3 col-lg-3">
-                <div class="team-member">
                     <img class="mx-auto rounded-circle" src="assets/img/team/LR.png" alt="Luca Romeo"/>
                     <h4>Luca Romeo</h4>
                     <p class="text-muted">Department of Economics and Law, University of Macerata, Macerata, Italy</p>
@@ -1303,6 +1721,11 @@
                             class="material-icons">email</i></a>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12"><h4>Publication Chairs: <span style="font-weight: normal!important;">Cristian Tommasino, Cristian Russo, and Michele Bernardini</span></h4></div>
         </div>
     </div>
 </section>
